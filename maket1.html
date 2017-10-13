@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Макет 2 колонок с процентами</title>
+  <style>
+*{
+    margin:0;
+    padding:0;
+}
+
+body, html { 
+    height:100%; 
+    width:100%; 
+}
+
+.float-wrap{
+    float:left;
+    height:100%;
+    margin:10px 0 10px 0;
+    min-width:360px;
+    width:100%;
+}
+
+.wrap{
+    height:100%;
+    width:98%;
+    min-width:360px;
+    margin:auto;
+    position:relative;
+}
+
+.left{
+    background:#ffa500;
+    float:left; 
+    height:80%;
+    min-width:300px;
+    width: 30%;
+	text-align:center;
+}
+
+.right{
+    background:#42aaff;
+    float:right;
+    height:100%;
+    position:absolute;
+    right:0;
+    min-width:360px;
+    width:69%; 
+	text-align:center;	
+}
+
+header{
+    background:#BBBBBB;
+
+}
+
+footer{
+    background:green;
+}
+footer,header{
+	clear:both;
+    height:200px;
+    line-height:200px;
+    text-align:center;
+    vertical-align:middle;
+    width:100%;
+	}
+  </style>
+</head>
+<body>
+   <header>
+    <p>Шапка сайта</p>
+  </header>
+
+  <div class="float-wrap">
+    <div class="wrap">
+      <div class="left">
+        <p>Левая колонка</p>
+      </div>
+      <div class="right">
+        <p>Правая колонка</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Нижняя часть</p>
+  </footer>
+</body>
+</html>
